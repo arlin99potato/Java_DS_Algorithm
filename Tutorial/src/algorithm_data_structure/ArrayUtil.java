@@ -37,6 +37,8 @@ public class ArrayUtil {
 		int[] arr = {5,1,8,10};
 		int[] arr2 = {3,4};
 		printArray(arr);
+		
+		printArray(new int[] {2,7,5});
 	}
 
 }
