@@ -9,22 +9,39 @@ public class ReverseArray {
 		int[] array = {2, 11, 5, 10, 7, 8};
 		demo.printArray(array, "Original Array");
 		
-		int[] result = demo.reverseArray(array);
+//		int[] result = demo.reverseArray(array);
+		int[] result = demo.reverseArray(array, 0, array.length-1);
 		demo.printArray(result, "Reversed Array");
 		
 	}
 	
-	public int[] reverseArray(int[] array) {
+////My answer
+//	public int[] reverseArray(int[] array) {
 		
-		int[] reversedArray = new int[array.length];
-		int reversedCount = array.length-1;		
+////		int[] reversedArray = new int[array.length];
+////		int reversedCount = array.length-1;		
+////		
+////		for(int i = 0; i < array.length; i++) {
+////			reversedArray[i] = array[reversedCount];
+////			reversedCount--;
+////		}
+////		
+////		return reversedArray;
+//		
+//	
+//	}
+	
+	public int[] reverseArray(int[] array, int start, int end) {
 		
-		for(int i = 0; i < array.length; i++) {
-			reversedArray[i] = array[reversedCount];
-			reversedCount--;
+		while(start < end) {
+			int temp = array[start];
+			array[start] = array[end];
+			array[end] = temp;
+			start++;
+			end--;
 		}
 		
-		return reversedArray;
+		return array;
 	}
 	
 	public void printArray(int[] array, String arrayType) {
