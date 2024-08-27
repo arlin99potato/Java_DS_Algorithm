@@ -17,7 +17,7 @@ public class RemoveEvenIntegerArray {
 		
 		// Count the number of even integers
 		// To create new array
-		for(int i = 0; i < array.length-1; i++) {
+		for(int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
 			
 			// If element is not divisible by 0
@@ -34,7 +34,7 @@ public class RemoveEvenIntegerArray {
 		
 		System.out.print("New Array: { ");
 		
-		for(int i = 0; i < array.length-1; i++) {
+		for(int i = 0; i < array.length; i++) {
 			if(array[i] % 2 != 0) {
 				newArray[newCount] = array[i];
 				System.out.print(newArray[newCount] + " ");
