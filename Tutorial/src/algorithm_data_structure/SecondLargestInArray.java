@@ -8,7 +8,7 @@ public class SecondLargestInArray extends Printer {
 		
 		int [] array = {2,5,3,7,3,6,1,3,6,10,8,9,11};
 		
-		printer.printArray(array);
+		printer.printArray(array, "Array Given");
 		
 		int result = demo.findSecMaxValue(array);
 		

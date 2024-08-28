@@ -2,9 +2,9 @@ package algorithm_data_structure;
 
 public class Printer {
 	
-public void printArray(int[] array) {
+public void printArray(int[] array, String arrayType) {
 		
-		System.out.print("Original Array: {");
+		System.out.print( arrayType + ": {");
 		
 		for(int i = 0; i< array.length ; i++) {
 			if (i != array.length-1) {
