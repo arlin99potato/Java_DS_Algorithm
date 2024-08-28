@@ -10,13 +10,17 @@ public class MinimumValueArray {
 		int result = demo.findMinValue(array);
 		
 		System.out.print("Minimum value found is: " + result);
-		
-		
 	}
 	
+	// The code I wrote match the solution 
 	public int findMinValue(int[] array) {
+		
+		if (array == null || array.length == 0) {
+			throw new IllegalArgumentException("Illegal Input");
+		}
+		
 		int temp = array[0];
-		System.out.print("Array: {");
+		System.out.print("Array: { ");
 		
 		for(int i = 1; i < array.length ; i++) {
 			
