@@ -1,5 +1,6 @@
 package algorithm_data_structure;
 
+/// This question is always asked in interviews
 public class FindMissingNumberArray {
 
 	
